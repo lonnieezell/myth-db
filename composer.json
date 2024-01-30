@@ -1,0 +1,55 @@
+{
+    "name": "myth/db",
+    "description": "An effortless database abstraction built on top of CodeIgniter 4.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "codeigniter",
+        "codeigniter4",
+        "database"
+    ],
+    "authors": [
+        {
+            "name": "Lonnie Ezell",
+            "email": "lonnieje@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/lonnieezell/myth-db",
+    "support": {
+        "issues": "https://github.com/lonnieezell/myth-db/issues",
+        "forum": "https://github.com/lonnieezell/myth-db/discussions",
+        "source": "https://github.com/lonnieezell/myth-db",
+        "docs": "https://lonnieezell.github.io/myth-db/"
+    },
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "codeigniter4/framework": "^4.3.5",
+        "friendsofphp/php-cs-fixer": "^3.48",
+        "phpunit/phpunit": "^10.5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Myth\\DB\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests",
+            "Tests\\Support\\": "tests/_support",
+            "CodeIgniter\\": "vendor/codeigniter4/framework/system"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit",
+        "cs": "php-cs-fixer fix --ansi --verbose --diff --dry-run",
+        "cs-fix": "php-cs-fixer fix --ansi --verbose"
+    }
+}
